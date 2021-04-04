@@ -1,26 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import styled from 'styled-components';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MainTitle>IronStore</MainTitle>
+      <div>
+        <h2>Search</h2>
+        <input></input>
+        <input type="checkbox" id="stockButton" />
+        <label for="stockButton">Only show products on stock</label>
+      </div>
+      <div></div>
     </div>
   );
 }
 
 export default App;
+
+const MainTitle = styled.h1`
+  font-size: 42px;
+`;
